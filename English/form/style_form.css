@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bodygreen {
+  background: #0e6655;
+}
+
+.bodypurple {
+  background: #333d84;
+}
+
+.bodygray {
+  background: #283747;
+}
+
+.bodyblue {
+  background: #2874a6;
+}
+
+.div_body {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Vazir";
+}
+
+.body_login {
+  padding: 10px 30px;
+  width: 550px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.75);
+}
+.body_login .header_form_login {
+  color: #b3b6b7;
+  font-size: 50px;
+  font-weight: 900;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.body_login .header_form_login .img_form {
+  width: 300px;
+  height: 300px;
+}
+.body_login .form_login {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+.body_login .form_login .label {
+  font-weight: bold;
+  width: 100%;
+  color: #b3b6b7;
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 23px;
+}
+.body_login .form_login input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  border-radius: 15px;
+}
+.body_login .form_login input:hover {
+  transform: 0.1s;
+  font-size: 17.5px;
+}
+.body_login .form_login.inputgreen input {
+  color: rgba(115, 198, 182, 0.7);
+  background: rgba(115, 198, 182, 0.2);
+}
+.body_login .form_login.inputgreen input::placeholder {
+  padding-left: 15px;
+  color: rgba(115, 198, 182, 0.7);
+}
+.body_login .form_login.inputpurple input {
+  color: #c39bd3;
+  background: rgba(195, 155, 211, 0.2);
+}
+.body_login .form_login.inputpurple input::placeholder {
+  padding-left: 15px;
+  color: rgba(195, 155, 211, 0.7);
+}
+.body_login .form_login.inputgray input {
+  color: #95a5a6;
+  background: rgba(149, 165, 166, 0.2);
+}
+.body_login .form_login.inputgray input::placeholder {
+  padding-left: 15px;
+  color: rgba(149, 165, 166, 0.7);
+}
+.body_login .form_login.inputblue input {
+  color: #85c1e9;
+  background: rgba(133, 193, 233, 0.2);
+}
+.body_login .form_login.inputblue input::placeholder {
+  padding-left: 15px;
+  color: rgba(133, 193, 233, 0.7);
+}
+.body_login .form_login .btn_login {
+  font-size: 35px;
+  font-weight: 700;
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  border: 0px;
+  border-radius: 40px;
+}
+.body_login .form_login .btn_login:hover {
+  transition: 0.1s;
+  font-size: 36px;
+}
+
+.tag_a_form {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 23px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tag_a_form a {
+  text-decoration: none;
+}
+.tag_a_form a:visited, .tag_a_form a:active, .tag_a_form a:link {
+  color: #b3b6b7;
+}
+.tag_a_form a:hover {
+  text-decoration: underline;
+  color: rgba(179, 182, 183, 0.7);
+}
+
+.btn_color {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+.btn_color .btn_flex {
+  padding-bottom: 20px;
+}
+.btn_color .btn_flex .btn_class {
+  padding: 5px;
+}
+.btn_color .btn_flex .btn_class .gray {
+  background: #95a5a6;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  border: 0px;
+  border-radius: 7%;
+}
+.btn_color .btn_flex .btn_class .gray:hover {
+  background: rgba(149, 165, 166, 0.7);
+  font-size: 20.5px;
+}
+.btn_color .btn_flex .btn_class .blue {
+  background: #2980b9;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  border: 0px;
+  border-radius: 7%;
+}
+.btn_color .btn_flex .btn_class .blue:hover {
+  background: rgba(41, 128, 185, 0.7);
+  font-size: 20.5px;
+}
+.btn_color .btn_flex .btn_class .purple {
+  background: #9b59b6;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  border: 0px;
+  border-radius: 7%;
+}
+.btn_color .btn_flex .btn_class .purple:hover {
+  background: rgba(155, 89, 182, 0.7);
+  font-size: 20.5px;
+}
+.btn_color .btn_flex .btn_class p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Vazir";
+  color: white;
+}/*# sourceMappingURL=style_form.css.map */

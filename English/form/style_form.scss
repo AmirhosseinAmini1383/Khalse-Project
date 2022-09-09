@@ -1,0 +1,167 @@
+@import "../font";
+@import "../color";
+@import "../mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bodygreen {
+  background: $color_green_login;
+}
+.bodypurple {
+  background: $color_perple_login;
+}
+.bodygray {
+  background: $color_gray_login;
+}
+.bodyblue {
+  background: $color_blue_login;
+}
+
+.div_body {
+  padding-top: 50px;
+  width: 100%;
+  @include content-flex-mobile();
+  font-family: $font_family_v;
+}
+.body_login {
+  padding: 10px 30px;
+  width: 550px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.75);
+
+  //background: rgb(60, 177, 216);
+  .header_form_login {
+    color: $color_gray;
+    font-size: 50px;
+    font-weight: 900;
+    width: 100%;
+    @include content-flex-mobile();
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .img_form {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .form_login {
+    width: 100%;
+    @include content-flex-mobile();
+    .label {
+      font-weight: bold;
+      width: 100%;
+      color: $color_gray;
+      display: flex;
+      padding-bottom: 5px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 23px;
+    }
+    input {
+      width: 100%;
+      height: 60px;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0 15px;
+      font-size: 17px;
+      border-radius: 15px;
+      &:hover {
+        transform: 0.1s;
+        font-size: 17.5px;
+      }
+    }
+    &.inputgreen {
+      input {
+        color: rgba($color_btn_green, 0.7);
+        background: rgba($color_btn_green, 0.2);
+        &::placeholder {
+          padding-left: 15px;
+          color: rgba($color_btn_green, 0.7);
+        }
+      }
+    }
+    &.inputpurple {
+      input {
+        color: rgba($color_btn_pink, 1);
+        background: rgba($color_btn_pink, 0.2);
+        &::placeholder {
+          padding-left: 15px;
+          color: rgba($color_btn_pink, 0.7);
+        }
+      }
+    }
+    &.inputgray {
+      input {
+        color: rgba($color_btn_gray, 1);
+        background: rgba($color_btn_gray, 0.2);
+        &::placeholder {
+          padding-left: 15px;
+          color: rgba($color_btn_gray, 0.7);
+        }
+      }
+    }
+    &.inputblue {
+      input {
+        color: rgba($color_btn_blue, 1);
+        background: rgba($color_btn_blue, 0.2);
+        &::placeholder {
+          padding-left: 15px;
+          color: rgba($color_btn_blue, 0.7);
+        }
+      }
+    }
+    .btn_login {
+      font-size: 35px;
+      font-weight: 700;
+      width: 100%;
+      height: 65px;
+      text-align: center;
+      border: 0px;
+      border-radius: 40px;
+      &:hover {
+        transition: 0.1s;
+        font-size: 36px;
+      }
+    }
+  }
+}
+.tag_a_form {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 23px;
+  font-weight: bold;
+  width: 100%;
+  @include album_cover_music();
+  a {
+    @include tag-a-form();
+  }
+}
+.btn_color {
+  width: 100%;
+  @include top-header-row($justify_content: center, $align_item: center);
+  .btn_flex {
+    padding-bottom:20px;
+    .btn_class{
+      padding: 5px;
+      .gray {
+        @include btn_color(#95a5a6);
+      }
+      .blue {
+        @include btn_color(#2980b9);
+      }
+      .purple {
+        @include btn_color(#9b59b6);
+      }
+      p{
+        font-size:20px;
+        font-weight: 500;
+        font-family: $font_family_v;
+        color: $color_white;
+      }
+    }
+  }
+}

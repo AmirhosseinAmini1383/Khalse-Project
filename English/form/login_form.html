@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style_form.css" rel="stylesheet" />
+  <title>Let's FT</title>
+</head>
+
+<body class="bodygreen" id="#body">
+  <div class="div_body">
+    <div class="body_login">
+      <header class="header_form_login">
+        <div>
+          <img class="img_form" id="img_image" src="../image/Khalse-green.png" />
+        </div>
+        <p>LOGIN</p>
+      </header>
+      <form action="#" method="post" id="login_form_id" class="form_login inputgreen">
+        <label class="label">UserName :</label>
+        <input type="text" name="username" placeholder="Please Enter Your UserName" />
+        <br />
+        <label class="label">Password :</label>
+        <input type="password" name="Password" placeholder="Please Enter Your Password" />
+        <br />
+        <br />
+        <input type="submit" class="btn_login" onmouseover="myhover(this.style.opacity=0.5)" onmouseout="myfuncmouse()"
+          value="SUBMIT" />
+      </form>
+      <div class="tag_a_form">
+        <a href="#">REGISTER</a>
+        <a href="#">FORGET PASSWORD</a>
+      </div>
+      <div class="btn_color">
+        <div class="btn_flex">
+          <span class="btn_class">
+            <button onclick="changeTheme('green', 'purple')" class="purple">
+              <p>Purple</p>
+            </button>
+          </span>
+          <span class="btn_class">
+            <button onclick="changeTheme('green', 'gray')" class="gray">
+              <p>Gray</p>
+            </button></span>
+          <span class="btn_class">
+            <button onclick="changeTheme('green', 'blue')" class="blue">
+              <p>Blue</p>
+            </button></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function changeTheme(current_color, next_color) {
+      let image = (document.getElementById("img_image").src =
+        "../image/Khalse-" + next_color + ".png");
+      document
+        .getElementById("#body")
+        .classList.remove("body" + current_color);
+      document.getElementById("#body").classList.add("body" + next_color);
+      document
+        .getElementById("login_form_id")
+        .classList.remove("input" + current_color);
+      document
+        .getElementById("login_form_id")
+        .classList.add("input" + next_color);
+      document
+        .getElementById("#btn_login")
+        .classList.remove("btn_login_" + current_color);
+      document
+        .getElementById("#btn_login")
+        .classList.add("btn_login_" + next_color);
+    }
+
+    // function myfunction_purple() {
+    //     let color_purple = new Array('#333d84', 'rgba(195, 155, 211, 0.7)', 'rgba(195, 155, 211, 0.1)');
+    //     let body_color = document.getElementById("#body");
+    //     let btn_login = document.getElementById("#btn_login");
+    //     let input = document.getElementsByClassName("input");
+    //     let image = document.getElementById("img_image").src = "../image/Khalse-pink.png";
+    //     body_color.style.background = color_purple[0];
+    //     btn_login.style.background = color_purple[1];
+    //     input[0].style.background = color_purple[2];
+    //     input[1].style.background = color_purple[2];
+    //     // document.getElementsByClassName("purple").style.display = nono;
+
+    //     // document.getElementById('change_color').style.placeholderColor = color_purple[2];
+    // };
+
+    // function myhover() {
+    //     document.getElementById("#btn_login").style.opacity = 0.8;
+    // }
+
+    // function myfuncmouse() {
+    //     document.getElementById("#btn_login").style.opacity = 1;
+    // }
+  </script>
+</body>
+
+</html>

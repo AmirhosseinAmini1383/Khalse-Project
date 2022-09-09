@@ -1,0 +1,31 @@
+@import "color";
+@import "font";
+@import "mixin";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: #262626;
+}
+
+.bgcolor1-3{
+    @include div-bgcolor($color_div_bg_1_3);
+}
+.bgcolor2-4{
+    @include div-bgcolor($color_div_bg_2_4);
+}
+.txt{
+    color: $color_blue;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: mix($color_div_bg_1_3,$color_div_bg_2_4, 40%);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: $color_blue;
+}

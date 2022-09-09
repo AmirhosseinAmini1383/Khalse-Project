@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column;align-items: center;">
+        <div class="fetchImagesWrapper">
+            <button class="getImagesButton">
+                Get Image Rapper
+            </button>
+        </div>
+        <div class="imageDisplayWrapper" style="margin-top: 25px;">
+            <img class="imageToDisplay" style="width: 600px; height: 800px;border: 1px solid black;" />
+        </div>
+    </div>
+</body>
+<script>
+    const requestUrl =
+        'https://api.unsplash.com/search/photos?query=rapper&client_id=33tHr1M-7ZnGG4g8V_TzwgXRYuw0wUEdsEJ_Zjxeuww';
+    const getImagesButton = document.querySelector('.getImagesButton');
+    const imageToDisplay = document.querySelector('.imageToDisplay');
+
+    getImagesButton.addEventListener('click', async () => {
+        let randomImage = await getNewImage();
+        imageToDisplay.src = randomImage;
+    });
+
+    async function getNewImage() {
+        let randomNumber = Math.floor(Math.random() * 10);
+        return fetch(requestUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                let allImages = data.results[randomNumber];
+                return allImages.urls.regular;
+            })
+    }
+</script>
+
+</html>

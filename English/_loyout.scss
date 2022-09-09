@@ -1,0 +1,134 @@
+@import "font";
+@import "color";
+@import "base";
+@import "mixin";
+.content{
+    @include content-flex-tablet();
+    width: 100%;
+    height: 100%;
+    font-family: $font_family_m;
+    .content-text{
+        width: 750px;
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        color: $color_white;
+        display: block;
+        h1{
+            padding-top: 10px;
+            font-size: 35px;
+        }
+        h3{
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .btn-ft{
+            color: $color_white;
+            background-color: $color_blue;
+            width: 100px;
+            height: 40px;
+            border-radius: 7px;
+            border: 1px solid $color_blue;
+            font-family: $font_family_m;
+            font-size: 20px;
+            margin-top: 10px;
+            &:hover{
+            transition: 0.3s;
+            background-color: rgba($color_blue,0.8);
+            border: 1px solid rgba($color_blue,0.8);
+            font-size: 20.5px;
+            }
+        }  
+    }
+    .content-text-check{
+        @include content-text-check-flex();
+        color: $color_white;
+        margin: 10px 0px 10px;
+        .check-text{
+            margin-top: 2px;
+            font-size: 15px;
+            padding-right:30px;
+            font-size: 17px;
+            .check-text{
+                margin-top: 2px;
+                font-size: 15px;
+                padding-right:30px;
+                font-size: 17px;
+            }
+        }
+        .icon{
+            a{
+                font-size: 24px;
+                color: $color_white;
+                background: $color_blue;
+                width: 40px;
+                height: 40px;
+                line-height: 41px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                margin: 0 8px;
+                &:hover{
+                background: rgba($color_blue, 0.8);
+                }
+            }
+        }
+    }
+    .axkhalse{
+        width: 450px;
+        height: 450px;
+    } 
+}
+
+///////////////////////////////////////////////
+
+.my-services{
+    width: 100%;
+    margin-bottom:25px;
+    @include my-services();
+    .my-services-text{
+        /* width: 1425px; */
+        color: $color_white;
+        @include my-services();
+        font-family: $font_family_m;
+        h1{
+            padding-left: 5px;
+            font-size: 35px;
+        }
+    }
+}
+
+
+
+.my-best{
+    width: 100%;
+    @include my-best();
+    font-family: $font_family_m;
+    .my-best-text{
+        color: $color_white;
+        @include my-best();
+        h1{
+            font-size: 35px;
+        }
+    }
+    .my-best-music{
+        width: 800px;
+        @include my-best();
+        color: $color_white;
+        p{
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .my-best-music-cover-h2{
+        h2{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}

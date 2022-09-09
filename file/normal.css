@@ -1,0 +1,86 @@
+.content-text{
+    width: 100%;
+}
+@media screen and (max-width:1025px){
+    .topheader{
+        width: 100%;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+.header a{
+    padding: 20px 30px;
+}
+.ax-khalse{
+    width: 385px;
+    height: 385px;
+}
+.my-services-text h2{
+    font-size: 25px;
+}
+.my-services-text h1{
+    font-size: 35px;
+}
+.div-album{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg-album1{
+    padding: 15px 15px;
+}
+.bg-album2{
+    padding: 15px 15px;
+}
+.album{
+    width: 200px;
+    height: 200px;
+}
+.bg-album1 h2{
+    font-size: 18px;
+}
+.bg-album2 h2{
+    font-size: 18px;
+}
+.my-best-music{
+    width: 100%;
+}
+.my-best-text h1{
+    font-size: 28px;
+}
+.my-best-music p{
+    padding: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+.my-best-music-cover-h2 h2{
+    font-size: 25px;
+}
+.Caver{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--rang);
+    font-family: MYRIADPRO;
+}
+.footer-biography{
+    margin-bottom: 25px;
+}
+.biography-div-p{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+}
+.biography-p{
+    font-size: 28px;
+}

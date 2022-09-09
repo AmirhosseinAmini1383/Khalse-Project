@@ -1,0 +1,261 @@
+:root{
+    --rang:white;
+    --color: #85C1E9 ;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('Font/Vazir-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: MYRIADPRO;
+    src: url('Font/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+body{
+    background: black;
+    margin: 0;
+}
+form{
+    background: #fff;
+    margin-right: 300px;
+    width: 60px;
+    height: 35px;
+    display: flex;
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+form button{
+    background: var(--color);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #212F3C;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .fa-search{
+    align-self: center;
+    padding: 10px 20px;
+    color: var(--color);
+}
+.bgcolor1-3{
+    background-color: rgb(14, 35, 56);
+    padding: 20px 50px;
+}
+.topheader{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    font-family: MYRIADPRO;
+}
+.header a{
+    padding: 5px 50px;
+}
+a:visited , a:active , a:link{
+    color: var(--rang);
+}
+a:hover{
+    color: var(--color);
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content-text{
+    width: 850px;
+    height: 100%;
+    color: var(--rang);
+    display: block;
+    font-family: MYRIADPRO;
+}
+.content-text h1{
+    font-size: 35px;
+}
+.content-text h3{
+    font-size: 25px;
+}
+.content-text p{
+    font-family: MYRIADPRO;
+}
+.btn-ft{
+    color: var(--rang);
+    background-color: var(--color);
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid var(--color);
+    font-family: MYRIADPRO;
+    font-size: 20px;
+    margin-top: 10px;
+}  
+.txt{
+    color: var(--color);
+}
+.content-text-check{
+    color: var(--rang);
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px 10px;
+}
+.check-text{
+    margin-top: 2px;
+    font-size: 15px;
+    padding-right:30px;
+    font-family: MYRIADPRO;
+    font-size: 17px;
+}
+.icon a{
+    font-size: 24px;
+    color: var(--rang);
+    background: var(--color);
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.axkhalse{
+    width: 400px;
+    height: 400px;
+} 
+.bgcolor2-4{
+    background: rgb(27, 52, 77);
+    padding: 20px 50px;
+}
+.my-services{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.my-services-text{
+    /* width: 1425px; */
+    color: var(--rang);
+    display: block;
+    font-family: MYRIADPRO;
+}
+.my-services-text h2{
+    font-size: 35px;
+}
+.my-services-text h1{
+    font-size: 40px;
+}
+.div-album{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    color: var(--rang);
+    font-family: MYRIADPRO;
+} 
+.bg-album1{
+    padding: 30px 60px;
+    background-color: rgb(14, 35, 56);
+    border-radius: 5%;
+    margin-bottom: 25px;
+}
+.album{
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+}
+.my-best{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    font-family: MYRIADPRO;
+}
+.my-best-text{
+    color: var(--rang);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
+    align-items: center;
+}
+.my-best-text h1{
+    font-size: 35px;
+}
+.my-best-music{
+    width: 800px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    color: var(--rang);
+}
+.my-best-music p{
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.my-best-music-cover h2{
+    font-size: 30px;
+}
+.Caver{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    color: var(--rang);
+    font-family: MYRIADPRO;
+}
+.bg-album2{
+    padding: 30px 60px;
+    background: rgb(27, 52, 77);
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+.footer-biography{
+    color: var(--rang);
+    font-family: MYRIADPRO;
+    margin: 25px 0px;
+}
+.biography-div-p{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 50px;
+}
+.biography-p{
+    font-size: 35px;
+    margin: 0px;
+}
+
+
+
+
+
+

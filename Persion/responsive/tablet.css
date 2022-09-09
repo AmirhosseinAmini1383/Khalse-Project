@@ -1,0 +1,341 @@
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+.bgcolor1-3 {
+  padding: 10px 30px;
+}
+
+.bgcolor2-4 {
+  padding: 10px 30px;
+}
+
+.topheader {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.topheader .header a {
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.topheader .search {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .topheader .header a {
+    padding: 20px 15px;
+    font-size: 17px;
+  }
+  .search {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 160px;
+  }
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-text {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Vazir";
+}
+.content .content-text h1 {
+  font-size: 30px;
+}
+.content .content-text h3 {
+  font-size: 20px;
+}
+.content .content-text p {
+  font-size: 15px;
+}
+.content .content-text .btn-ft {
+  width: 75px;
+  height: 35px;
+  font-size: 16.5px;
+}
+.content .axkhalse {
+  width: 325px;
+  height: 325px;
+}
+
+.my-services {
+  align-items: center;
+}
+.my-services .my-services-text h1 {
+  font-size: 30px;
+}
+
+.div-album {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.div-album .bg-album1 {
+  padding: 10px 10px;
+}
+.div-album .bg-album1 h2 {
+  font-size: 16px;
+  font-family: "Vazir";
+}
+.div-album .album {
+  width: 150px;
+  height: 150px;
+}
+
+.my-best {
+  margin-bottom: 20px;
+}
+.my-best .my-best-text h1 {
+  font-size: 20px;
+}
+.my-best .my-best-music {
+  width: 100%;
+}
+.my-best .my-best-music p {
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Vazir";
+  text-align: justify;
+}
+.my-best .my-best-music .my-best-text h1 {
+  font-size: 28px;
+}
+.my-best .my-best-music-cover-h2 h2 {
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.body-grid .container-grid .grid_txt {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Vazir";
+  font-size: 20px;
+}
+.body-grid .container-grid .grid {
+  border-radius: 20px;
+  background: rgb(14, 35, 56);
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.body-grid .container-grid .grid .item-1 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-1 .img-grid-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-2 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-2 .img-grid-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-3 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-3 .img-grid-3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-4 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-4 .img-grid-4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-5 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-5 .img-grid-5 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-6 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-6 .img-grid-6 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-7 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-7 .img-grid-7 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.Caver {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Vazir";
+  margin-bottom: 18px;
+}
+.Caver .bg-album2 {
+  padding: 10px 10px;
+}
+.Caver .bg-album2 h2 {
+  font-size: 13px;
+  font-family: "Vazir";
+}
+.Caver .album {
+  width: 150px;
+  height: 150px;
+}
+
+.bg-album1 {
+  margin-bottom: 0px;
+}
+
+.bg-album2 {
+  margin-bottom: 0px;
+}
+
+.api .txt_api {
+  font-size: 15px;
+}
+.api .getImagesButton {
+  width: 280px;
+  height: 55px;
+  font-size: 25px;
+}
+.api .getImagesButton:hover {
+  font-size: 25.5px;
+}
+.api .imageDisplayWrapper .imageToDisplaystyle {
+  width: 450px;
+  height: 550px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: rgb(14, 35, 56);
+}
+
+.footer-biography {
+  margin-bottom: 25px;
+}
+.footer-biography .biography-div-p {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-biography .biography-p {
+  font-size: 28px;
+}
+.footer-biography .biography-div-p .p {
+  font-size: 15px;
+}/*# sourceMappingURL=tablet.css.map */

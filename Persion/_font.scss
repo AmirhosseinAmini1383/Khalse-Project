@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: MYRIADPRO;
+    src: url('font/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+@font-face {
+    font-family: Hayat;
+    src: url('font/a_hayat-webfont.woff') format('.woff');
+}
+$font_family_m:'MYRIADPRO';
+$font_family_v:'Vazir';
+$font_family_h:'Hayat';

@@ -1,0 +1,796 @@
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.search {
+  background: white;
+  margin-right: 300px;
+  width: 60px;
+  height: 35px;
+  display: flex;
+}
+.search .input-search {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.search .btn-search {
+  background: #85c1e9;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  color: #212F3C;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.search .fa-search {
+  align-self: center;
+  padding: 5px 10px;
+  color: #85c1e9;
+}
+
+.topheader {
+  padding: 10px 0px;
+  background: #162d45;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topheader .logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 35px;
+  border-radius: 50px;
+}
+.topheader .header {
+  display: flex;
+  align-items: center;
+  font-family: "MYRIADPRO";
+}
+.topheader .header a {
+  text-decoration: none;
+  padding: 5px 50px;
+  font-size: 20px;
+}
+.topheader .header a:visited, .topheader .header a:active, .topheader .header a:link {
+  color: white;
+}
+.topheader .header a:hover {
+  color: #85c1e9;
+  transition: 0.3s;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  font-family: "MYRIADPRO";
+}
+.content .content-text {
+  width: 750px;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: white;
+  display: block;
+}
+.content .content-text h1 {
+  padding-top: 10px;
+  font-size: 35px;
+}
+.content .content-text h3 {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.content .content-text p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.content .content-text .btn-ft {
+  color: white;
+  background-color: #85c1e9;
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid #85c1e9;
+  font-family: "MYRIADPRO";
+  font-size: 20px;
+  margin-top: 10px;
+}
+.content .content-text .btn-ft:hover {
+  transition: 0.3s;
+  background-color: rgba(133, 193, 233, 0.8);
+  border: 1px solid rgba(133, 193, 233, 0.8);
+  font-size: 20.5px;
+}
+.content .content-text-check {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin: 10px 0px 10px;
+}
+.content .content-text-check .check-text {
+  margin-top: 2px;
+  font-size: 15px;
+  padding-right: 30px;
+  font-size: 17px;
+}
+.content .content-text-check .check-text .check-text {
+  margin-top: 2px;
+  font-size: 15px;
+  padding-right: 30px;
+  font-size: 17px;
+}
+.content .content-text-check .icon a {
+  font-size: 24px;
+  color: white;
+  background: #85c1e9;
+  width: 40px;
+  height: 40px;
+  line-height: 41px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+.content .content-text-check .icon a:hover {
+  background: rgba(133, 193, 233, 0.8);
+}
+.content .axkhalse {
+  width: 450px;
+  height: 450px;
+}
+
+.my-services {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+.my-services .my-services-text {
+  /* width: 1425px; */
+  color: white;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+  font-family: "MYRIADPRO";
+}
+.my-services .my-services-text h1 {
+  padding-left: 5px;
+  font-size: 35px;
+}
+
+.my-best {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  font-family: "MYRIADPRO";
+}
+.my-best .my-best-text {
+  color: white;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+.my-best .my-best-text h1 {
+  font-size: 35px;
+}
+.my-best .my-best-music {
+  width: 800px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.my-best .my-best-music p {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+.my-best .my-best-music-cover-h2 h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+.div-album {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: "MYRIADPRO";
+}
+.div-album .bg-album1 {
+  background: rgb(14, 35, 56);
+  padding: 20px 20px;
+  border-radius: 5%;
+  margin-bottom: 25px;
+}
+.div-album .album {
+  width: 250px;
+  height: 250px;
+  border-radius: 15%;
+}
+.div-album a {
+  text-decoration: none;
+}
+.div-album a:visited, .div-album a:active, .div-album a:link {
+  color: white;
+}
+.div-album a:hover {
+  color: #85c1e9;
+  transition: 0.3s;
+}
+
+.Caver {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: "MYRIADPRO";
+}
+.Caver .bg-album2 {
+  background: rgb(27, 52, 77);
+  padding: 20px 20px;
+  border-radius: 5%;
+  margin-bottom: 25px;
+}
+.Caver .album {
+  width: 250px;
+  height: 250px;
+  border-radius: 15%;
+}
+.Caver a {
+  text-decoration: none;
+}
+.Caver a:visited, .Caver a:active, .Caver a:link {
+  color: white;
+}
+.Caver a:hover {
+  color: #85c1e9;
+  transition: 0.3s;
+}
+
+.body-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.body-grid .container-grid .grid_txt {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "MYRIADPRO";
+  font-size: 35px;
+}
+.body-grid .container-grid .grid_txt a {
+  text-decoration: none;
+}
+.body-grid .container-grid .grid_txt a:visited, .body-grid .container-grid .grid_txt a:active, .body-grid .container-grid .grid_txt a:link {
+  color: #85c1e9;
+}
+.body-grid .container-grid .grid {
+  border-radius: 30px;
+  background: rgb(14, 35, 56);
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 250px);
+  gap: 20px;
+  text-align: center;
+  padding: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.body-grid .container-grid .grid .item-1 {
+  grid-column: 1/span 2;
+}
+.body-grid .container-grid .grid .item-1 .img-grid-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.body-grid .container-grid .grid .item-2 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-2 .img-grid-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.body-grid .container-grid .grid .item-3 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-3 .img-grid-3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.body-grid .container-grid .grid .item-4 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-4 .img-grid-4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.body-grid .container-grid .grid .item-5 {
+  width: 100%;
+  height: 100%;
+  grid-column: 3;
+  grid-row: 2/span 2;
+}
+.body-grid .container-grid .grid .item-5 .img-grid-5 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.body-grid .container-grid .grid .item-6 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-6 .img-grid-6 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.body-grid .container-grid .grid .item-7 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-7 .img-grid-7 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+.api {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.api .txt_api {
+  color: white;
+  font-family: "MYRIADPRO";
+  font-size: 19px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.api .getImagesButton {
+  color: white;
+  background-color: #85c1e9;
+  width: 300px;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid #85c1e9;
+  font-family: "MYRIADPRO";
+  font-size: 30px;
+  margin-top: 10px;
+}
+.api .getImagesButton:hover {
+  transition: 0.3s;
+  background-color: rgba(133, 193, 233, 0.8);
+  border: 1px solid rgba(133, 193, 233, 0.8);
+  font-size: 30.5px;
+}
+.api .imageDisplayWrapper {
+  margin-top: 25px;
+}
+.api .imageDisplayWrapper .imageToDisplay {
+  display: none;
+}
+.api .imageDisplayWrapper .imageToDisplaystyle {
+  width: 600px;
+  height: 700px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: rgb(14, 35, 56);
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+.footer-biography {
+  color: white;
+  font-family: "MYRIADPRO";
+  margin: 25px 0px;
+}
+.footer-biography .biography-div-p {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  gap: 30px;
+}
+.footer-biography .biography-p {
+  font-size: 35px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}/*# sourceMappingURL=main.css.map */

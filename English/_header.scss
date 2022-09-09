@@ -1,0 +1,54 @@
+@import "font";
+@import "color";
+@import "base";
+@import "mixin";
+:root{
+    scroll-behavior: smooth;   
+}
+.search{
+    background: $color_white;
+    margin-right: 300px;
+    width: 60px;
+    height: 35px;
+    display: flex;
+    .input-search{
+        flex: 1;
+        border: none;
+        outline: none;
+    }
+    .btn-search{
+        background: $color_blue;
+        padding: 5px 20px;
+        border: none;
+        outline: none;
+        color: #212F3C;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    .fa-search{
+        align-self: center;
+        padding: 5px 10px;
+        color: $color_blue;
+    }
+}
+.topheader{
+    padding: 10px 0px;
+    background:mix($color_div_bg_1_3,$color_div_bg_2_4, 40%) ;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    @include top-header-row($justify_content:space-between,$align_item:center);
+    .logo{
+       @include logo();
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        font-family: $font_family_m;
+        a{
+            @include tag-a();
+            padding: 5px 50px;
+            font-size: 20px;
+        }
+    }
+}

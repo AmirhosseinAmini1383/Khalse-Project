@@ -1,0 +1,268 @@
+@import "../font";
+@import "../color";
+@import "../mixin";
+@import "../base";
+
+.bgcolor1-3{
+    padding: 20px 30px; 
+}
+.bgcolor2-4{
+    padding: 20px 30px; 
+}
+@media screen and (max-width:1100px){
+    .topheader{
+        @include top-header-colum($justify_content:center,$align_item:center);
+        .axkhalse{
+            width: 325px;
+            height: 325px;
+        }
+    }
+    
+    
+}
+
+.topheader{
+    width: 100%;
+    .header{
+        a{
+            font-size: 18px;
+            padding: 15px 20px;
+
+        }
+    }
+    .search{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 120px;
+        }
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    @include content-flex-mobile();
+    .content-text{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        color: $color_white;
+        @include top-header-colum($justify_content:flex-start,$align_item:flex-start);
+        font-family:$font_family_m;
+        h1{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .btn-ft{
+            width: 75px;
+            height: 35px;
+            font-size: 16.5px;
+        } 
+    }
+    .axkhalse{
+        width: 385px;
+        height: 385px;
+    }
+}
+
+.my-services{
+    align-items: center;
+    .my-services-text{
+        h1{
+            font-size: 33px;
+        }
+    }
+}
+
+.div-album{
+    width: 100%;
+    @include album_cover_music();
+    margin-bottom: 18px;
+    .bg-album1{
+        padding: 15px 15px;
+        h2{
+            font-size: 18px;
+            font-family: $font_family_v;
+        }
+    }
+    .album{
+    width: 200px;
+    height: 200px;
+    }
+    
+}
+.my-best{
+    margin-bottom: 20px;
+    .my-best-text{
+        h1{
+            font-size: 20px;
+        }
+    } 
+    .my-best-music{
+        width: 100%;
+        p{
+            padding: 5px;
+            font-size: 16px;
+            font-family: $font_family_m;
+            text-align: justify;
+        }
+        .my-best-text{
+            h1{
+                font-size: 28px;
+            }
+        }
+    }
+    .my-best-music-cover-h2{
+        h2{
+            font-size: 25px;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+
+
+
+.body-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .container-grid{
+        .grid_txt{
+            color: $color_white;
+            text-align: center;
+            margin-top: 20px;
+            font-family: $font_family_v;
+            font-size: 25px;
+            }
+        .grid{
+        border-radius: 20px;
+        background: $color_div_bg_1_3;
+        display: grid;
+        grid-template-columns:repeat(3,200px) ;
+        grid-template-rows:  repeat(3,150px);
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .item-1{
+                @include width_height();
+            .img-grid-1{
+                @include img_grid_tablet();
+            }
+        }
+        .item-2{
+                @include width_height();
+            .img-grid-2{     
+                @include img_grid_tablet();
+            }
+        }
+        .item-3{
+                @include width_height();
+            .img-grid-3{
+                @include img_grid_tablet();
+            }
+        }
+        .item-4{
+                @include width_height();
+            .img-grid-4{
+                @include img_grid_tablet();
+            }
+        }
+        .item-5{
+                @include width_height();
+            .img-grid-5{
+                @include img_grid_tablet();
+            }
+        }
+        .item-6{
+                @include width_height();
+            .img-grid-6{
+                @include img_grid_tablet();
+            }
+        }
+        .item-7{
+            @include width_height();
+            .img-grid-7{
+                @include img_grid_tablet();
+            }
+        }
+    }
+}
+}
+
+
+
+
+.Caver{
+    width: 100%;
+    @include album_cover_music();
+    text-align: center;
+    color: $color_white;
+    font-family: $font_family_m;
+    margin-bottom: 18px;
+    .bg-album2{
+        padding: 15px 15px;
+        h2{
+            font-size: 18px;
+            font-family: $font_family_v;
+        }
+    }
+    .album{
+        width: 200px;
+        height: 200px;
+        }
+    
+}
+.bg-album1{
+    margin-bottom: 0px;
+}
+.bg-album2{
+    margin-bottom: 0px;
+}
+
+.api{
+    .txt_api{
+        font-size: 18px;
+    }
+    .getImagesButton{
+        width: 300px;
+        height: 55px;
+        font-size: 27px;
+        &:hover{
+        font-size: 27.5px;
+        }
+    }  
+    .imageDisplayWrapper{
+        .imageToDisplaystyle{
+            width: 500px;
+            height: 600px;
+            border-radius: 40px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background: $color_div_bg_1_3;
+        }
+    }
+} 
+
+.footer-biography{
+    margin-bottom: 25px;
+    .biography-div-p{
+        @include content-flex-mobile();
+        gap: 30px;
+    }
+    .biography-p{
+        font-size: 28px;
+    }
+    .biography-div-p .p{
+        font-size: 15px;
+    }
+}
+
+

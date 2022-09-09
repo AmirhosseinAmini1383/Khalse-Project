@@ -1,0 +1,47 @@
+@import "font";
+@import "color";
+@import "base";
+@import "mixin";
+.api{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    .txt_api{
+        color: $color_white;
+        font-family: $font_family_v;
+        font-size: 19px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .getImagesButton{
+        color: $color_white;
+        background-color: $color_blue;
+        width: 350px;
+        height: 60px;
+        border-radius: 7px;
+        border: 1px solid $color_blue;
+        font-family: $font_family_v;
+        font-size: 30px;
+        margin-top: 10px;
+        &:hover{
+        transition: 0.3s;
+        background-color: rgba($color_blue,0.8);
+        border: 1px solid rgba($color_blue,0.8);
+        font-size: 30.5px;
+        }
+    }  
+    .imageDisplayWrapper{
+        margin-top: 25px;
+        .imageToDisplay{
+            display: none;
+        }
+        .imageToDisplaystyle{
+            width: 600px;
+            height: 700px;
+            border-radius: 40px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background: $color_div_bg_1_3;
+        }
+    }
+}

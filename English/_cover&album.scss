@@ -1,0 +1,118 @@
+@import "font";
+@import "color";
+@import "base";
+@import "mixin";
+.div-album{
+    @include cover-album-flex();
+    width: 100%;
+    color: $color_white;
+    font-family: $font_family_m;
+    .bg-album1{
+        @include bg-album-cover($color_div_bg_1_3);
+    }
+    .album{
+        @include cover-album();
+    }
+    a{
+        @include tag-a();
+    }
+}
+
+
+.Caver{
+    @include cover-album-flex();
+    width: 100%;
+    color: $color_white;
+    font-family: $font_family_m;
+    .bg-album2{
+        @include bg-album-cover($color_div_bg_2_4);
+    }
+    .album{
+        @include cover-album();
+    }
+    a{
+        @include tag-a();
+    }
+}
+.body-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .container-grid{
+        .grid_txt{
+            color: $color_white;
+            text-align: center;
+            margin-top: 50px;
+            font-family: $font_family_m;
+            font-size: 35px;
+            a{
+                @include tag-a-grid()
+            }
+        }
+        .grid{
+        border-radius: 30px;
+        background: $color_div_bg_1_3;
+        display: grid;
+        grid-template-columns: repeat(3,400px);
+        grid-template-rows:  repeat(3,250px);
+        gap: 20px;
+        text-align: center;
+        padding: 30px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        // .txt_grid{
+        //     color: rgb(255, 255, 255);
+        //     grid-row: 1;
+        //     grid-column: 1 / span 3;
+        //     border: red 5px solid;
+        //     width: 100%;
+        //     height: 100%;
+        // }
+       
+        .item-1{
+            grid-column: 1 / span 2;
+            .img-grid-1{
+                @include img_grid();
+            }
+        }
+        .item-2{
+                @include width_height();
+            .img-grid-2{     
+                @include img_grid();
+            }
+        }
+        .item-3{
+            @include width_height();
+            .img-grid-3{
+                @include img_grid();
+            }
+        }
+        .item-4{
+            @include width_height();
+            .img-grid-4{
+                @include img_grid();
+            }
+        }
+        .item-5{
+            @include width_height();
+            grid-column: 3;
+            grid-row: 2/ span 2;
+            .img-grid-5{
+                @include img_grid();
+            }
+        }
+        .item-6{
+            @include width_height();
+            .img-grid-6{
+                @include img_grid();
+            }
+        }
+        .item-7{
+            @include width_height();
+            .img-grid-7{
+                @include img_grid();
+            }
+        }
+    }
+}
+}

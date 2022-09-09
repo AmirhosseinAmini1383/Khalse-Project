@@ -1,0 +1,143 @@
+@mixin div-bgcolor($color_bg){
+    background:$color_bg;
+    padding: 20px 30px;
+}
+@mixin top-header-row($justify_content,$align_item){
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: $justify_content;
+    align-items: $align_item;
+}
+@mixin top-header-colum($justify_content,$align_item){
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: $justify_content;
+    align-items: $align_item;
+}
+@mixin logo() {
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    border-radius: 50px;
+}
+@mixin tag-a() {
+        text-decoration: none;
+        &:visited , &:active , &:link{
+            color: $color_white;
+        }
+        &:hover{
+            color: $color_blue;
+            transition: 0.3s;
+        }
+}
+@mixin tag-a-grid() {
+    text-decoration: none;
+    &:visited , &:active , &:link{
+        color: $color_blue;
+    }
+}
+@mixin tag-a-form() {
+    text-decoration: none;
+    &:visited , &:active , &:link{
+        color: $color_gray;
+    }
+    &:hover{
+        text-decoration: underline;
+        color: rgba($color_gray, 0.7);
+    }
+}
+@mixin cover-album() {
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+}
+@mixin width_height() {
+    width: 100%;
+    height: 100%;
+}
+@mixin img_grid() {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+@mixin img_grid_tablet() {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+@mixin bg-album-cover($color_bg) {
+    background:$color_bg;
+    padding: 20px 20px;
+    border-radius: 5%;
+    margin-bottom: 25px;
+}
+@mixin cover-album-flex() {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+@mixin content-flex-tablet(){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@mixin content-flex-mobile() {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin album_cover_music_mobile() {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin album_cover_music() {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin content-text-check-flex() {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin my-services(){
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items:center;
+}
+
+@mixin my-best(){
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items:center;
+}
+
+@mixin  biography-div-p-flex(){
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btn_color($bg_color) {
+    background: $bg_color;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: $color_white;
+    border: 0px;
+    border-radius: 7%;
+    &:hover{
+        background: rgba($bg_color, 0.7);
+        font-size: 20.5px;
+    }
+}

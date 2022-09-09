@@ -1,0 +1,331 @@
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("font/Vazir-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: MYRIADPRO;
+  src: url("font/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+@font-face {
+  font-family: Hayat;
+  src: url("font/a_hayat-webfont.woff") format(".woff");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #262626;
+}
+
+.bgcolor1-3 {
+  background: rgb(14, 35, 56);
+  padding: 20px 30px;
+}
+
+.bgcolor2-4 {
+  background: rgb(27, 52, 77);
+  padding: 20px 30px;
+}
+
+.txt {
+  color: #85c1e9;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #162d45;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #85c1e9;
+}
+
+.bgcolor1-3 {
+  padding: 13px 18px;
+}
+
+.bgcolor2-4 {
+  padding: 13px 18px;
+}
+
+.topheader {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.topheader .header a {
+  font-size: 13px;
+  padding: 10px 10px;
+}
+.topheader .search {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-text {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Vazir";
+}
+.content .content-text h1 {
+  font-size: 22px;
+}
+.content .content-text h3 {
+  font-size: 17px;
+}
+.content .content-text p {
+  font-size: 13px;
+}
+.content .content-text .btn-ft {
+  width: 75px;
+  height: 35px;
+  font-size: 16.5px;
+}
+.content .axkhalse {
+  width: 250px;
+  height: 250px;
+}
+
+.my-services {
+  align-items: center;
+}
+.my-services .my-services-text h1 {
+  font-size: 20px;
+}
+
+.div-album {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.div-album .bg-album1 {
+  padding: 15px 15px;
+}
+.div-album .album {
+  width: 170px;
+  height: 170px;
+}
+.div-album h2 {
+  font-size: 15px;
+  font-family: "Vazir";
+}
+
+.my-best {
+  margin-bottom: 20px;
+}
+.my-best .my-best-text h1 {
+  font-size: 20px;
+}
+.my-best .my-best-music {
+  width: 100%;
+}
+.my-best .my-best-music p {
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Vazir";
+  text-align: justify;
+}
+.my-best .my-best-music .my-best-text h1 {
+  font-size: 20px;
+}
+.my-best .my-best-music-cover-h2 h2 {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.body-grid .container-grid .grid_txt {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Vazir";
+  font-size: 20px;
+}
+.body-grid .container-grid .grid {
+  border-radius: 20px;
+  background: rgb(14, 35, 56);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.body-grid .container-grid .grid .item-1 {
+  grid-column: 1/span 1;
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-1 .img-grid-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-2 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-2 .img-grid-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-3 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-3 .img-grid-3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-4 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-4 .img-grid-4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-5 {
+  grid-column: 1;
+  grid-row: 1/span 2;
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-5 .img-grid-5 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-6 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-6 .img-grid-6 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.body-grid .container-grid .grid .item-7 {
+  width: 100%;
+  height: 100%;
+}
+.body-grid .container-grid .grid .item-7 .img-grid-7 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.Caver {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Vazir";
+  margin-bottom: 18px;
+}
+.Caver .bg-album2 {
+  padding: 15px 15px;
+}
+.Caver .album {
+  width: 170px;
+  height: 170px;
+}
+.Caver h2 {
+  font-size: 15px;
+  font-family: "Vazir";
+}
+
+.bg-album1 {
+  margin-bottom: 0px;
+}
+
+.bg-album2 {
+  margin-bottom: 0px;
+}
+
+.api .txt_api {
+  font-size: 12px;
+}
+.api .getImagesButton {
+  width: 240px;
+  height: 50px;
+  font-size: 20px;
+}
+.api .getImagesButton:hover {
+  font-size: 20.5px;
+}
+.api .imageDisplayWrapper .imageToDisplaystyle {
+  width: 300px;
+  height: 400px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: rgb(14, 35, 56);
+}
+
+.footer-biography {
+  margin-bottom: 25px;
+}
+.footer-biography .biography-div-p {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-biography .biography-p {
+  font-size: 22px;
+}
+.footer-biography .biography-div-p .p {
+  font-size: 12px;
+}/*# sourceMappingURL=mobile.css.map */

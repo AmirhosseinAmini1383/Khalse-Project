@@ -1,0 +1,18 @@
+@import "font";
+@import "color";
+@import "base";
+@import "mixin";
+.footer-biography{
+    color: $color_white;
+    font-family: $font_family_v;
+    margin: 25px 0px;
+    .biography-div-p{
+        @include biography-div-p-flex();
+        text-align: justify;
+        gap: 30px;
+    }
+        .biography-p{
+        font-size: 35px;
+        margin: 0px;
+    }
+}
